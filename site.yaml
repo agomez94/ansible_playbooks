@@ -1,0 +1,12 @@
+---
+- name: My Playbook
+  hosts: tags_Name_agomez_ansibleday3
+  gather_facts: false
+  become: true
+  vars_files:
+    - "vars.yaml"
+
+  roles:
+    - first_role
+    - second_role
+  
